@@ -17,7 +17,7 @@
   <body class="bg-light">
     <nav class="navbar shadow navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand mx-3" href="{{route('home')}}"><img src="http://localhost:8000/images/Logo.png" alt="Logo" style="height: 10vh"></a>
+          <a class="navbar-brand mx-3" href="{{route('home')}}"><img src="{{ asset('storage/Logo.png') }}" alt="Logo" style="height: 10vh"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

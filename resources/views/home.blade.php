@@ -18,7 +18,7 @@
             @auth
                 @if (Auth::user()->is_admin == 1)
                     <div class="text-center" >
-                        <img src="http://localhost:8000/images/BannerAdmin.png" style="width: 65vw; border-radius:30px;s" class="shadow" alt="">
+                        <img src="{{ asset('storage/BannerAdmin.png') }}" style="width: 65vw; border-radius:30px;s" class="shadow" alt="">
                     </div>
                 @else
                 <div class="mt-4 mb-2">
@@ -209,7 +209,7 @@
 
             @else
                 <div class="text-center" >
-                    <img src="http://localhost:8000/images/BannerGuest.png" style="width: 65vw; border-radius:30px;s" class="shadow" alt="">
+                    <img src=" {{ asset('storage/BannerGuest.png') }}" style="width: 65vw; border-radius:30px;s" class="shadow" alt="">
                 </div>
             @endauth
         </div>
